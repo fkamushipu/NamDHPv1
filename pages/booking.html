@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Health Passport">	
+	<meta name="keywords" content="health, COVID-19, vaccine, vaccination, test">
+	<meta name="author" content="Feni Kamushipu">
+    <title>Nam DHP</title>
+    <link rel="stylesheet" href="../style/default.css">
+    <link rel="stylesheet" href="../style/booking.css">
+    <link rel="icon" href="../images/DHP Done.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNavigation">
+            <div class="logo">
+                <a href="index.html"><img src="../images/Nam-DHP3.png" alt="Logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul >
+                    <li><a  href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a class="active" href="booking.html">Bookings</a></li>
+                    <li><a href="how.html">How it works</a></li>
+                    <li><a href="register.html">Register / Log In</a></li>
+                    <li><a href = "profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sideNavigation">
+            <ul class="nav-list">
+                <li><a class="active" href="#booking">Booking</a></li>
+                <li><a href="#vaccination">Vaccination</a></li>
+            </ul>
+        </div>
+
+        <div class="content" id="content">
+            <div class="booking" id="booking">
+                <div class="booking-title">
+                    <h3>Booking for COVID-19 testing?</h3>
+                </div>
+                <div class="booking-info">
+                    <p>
+                        You are advised to read the following very carefully: 
+                        Have you been noticing the COVID-19symptoms?
+                        Click <a>here</a> to look at some symptoms, 
+                        for someone who might have the virus COVID-19.
+                    </p>
+                    <p>If you have n number of symptoms checked out click 
+                        the booking button to make an appointment and you may contact 
+                        0800100100 MOHS for other enquiries relted to COVID-19.
+                    </p>
+
+                    <button class="btn" id="book-btn">Booking</button>
+
+                    <div class="book-modal" id="book-modal">
+                        <div class="book-content">
+                            <span class="close">&times;</span>
+                            <form method="POST" action="register.php">
+                                <h3>Register for Booking</h3>
+                                <div class="input-group">
+                                <label>ID</label>
+                                <input type="text" name="id">
+                                </div>
+                            
+                                <div class="input-group">
+                                    <label>Name</label>
+                                    <input type="text" name="name">
+                                </div>
+                            
+                                <div class="input-group">
+                                    <label>Surname</label>
+                                    <input type="text" name="surname">
+                                </div>
+                            
+                                <div class="input-group">
+                                    <label>Date Of Birth</label>
+                                    <input type="text" name="dateofbirth">
+                                </div>
+                            
+                                <div class="input-group">
+                                    <label>Gender</label>
+                                    <select name="gender">
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                            
+                                <div class="input-group">
+                                    <label>Lifestyle</label>
+                                    <input type="text" name="lifestyle" placeholder="smoking or drinking e.t.c.">
+                                </div>
+                            
+                                <div class="input-group">
+                                    <button type="submit" name="register" class="submit">Send</button>
+                                    <button class="cancel"><a href="booking.html">Cancel</a></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="booking" id="vaccination">
+                <div class="booking-title">
+                    <h3>Register for COVID-19 Vaccination</h3>
+                </div>
+                <div class="booking-info">
+                    <p>
+                        You are advised to read the following very carefully: 
+                        Have you been noticing the COVID-19symptoms?
+                        Click <a>here</a> to look at some symptoms, 
+                        for someone who might have the virus COVID-19.
+                    </p>
+                    <p>If you have been vaccinated before there is no need for you 
+                        to register.
+                    </p>
+                    <button class="btn">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var modal = document.getElementById("book-modal");
+    var btn = document.getElementById("book-btn");
+    var span = document.getElementsByClassName("close")[0];
+
+    btn.onclick = function() {
+  modal.style.display = "block";
+    }
+    span.onclick = function(){
+        modal.style.display = "none";
+    }
+
+</script>
+</body>
+</html>

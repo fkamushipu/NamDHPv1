@@ -1,0 +1,117 @@
+.booking{
+    background-color: aliceblue;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+.booking-title{
+    padding: 30px;
+    width: 30%;
+	text-align: center;
+	background-color: rgb(163, 163, 141);
+
+}
+.booking-info{
+    text-align: center;
+	padding: 30px;
+	width: 100%
+}
+#vaccination{
+    background-color: beige;
+}
+#vaccination .booking-title{
+    background-color: rgb(112, 112, 98);
+}
+.btn{
+    background-color: #C4C4C4;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	color: #026C00;
+	font-size: 16px;
+	padding: 12px 25px;
+	bottom: 30px;
+	right: 0;
+	letter-spacing: 1px;
+    float:right;
+}
+.btn:hover{
+    background-color: #023f01;
+}
+
+.book-modal{
+	left: 50px;
+	top: 50px;
+	display: none;
+	z-index: 1;
+	overflow: auto;
+	background-color: #C4C4C4;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 350px;
+	padding: 80px 40px;
+}
+.book-content{
+	width :75%;
+}
+.close {
+	color: rgb(240, 3, 3);
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	top: 0 ;
+  }
+  .close:hover,
+.close:focus {
+	background-color: #000000;
+  color: rgb(240, 3, 3);
+  text-decoration: none;
+  cursor: pointer;
+}
+.book-content h3{
+	margin: 0;
+	padding: 0 0 20px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-transform: uppercase;
+}
+form label {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: rgb(0, 0, 0);
+}
+form input {
+	width: 100%;
+	margin-bottom: 20px;
+}
+.submit{
+	background-color: #026C00;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	padding: 12px 25px;
+	bottom: 30px;
+	letter-spacing: 1px;
+}
+.cancel{
+	background-color: #FC1B1B;
+	border: 0;
+	border-radius: 50px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	padding: 12px 25px;
+	bottom: 30px;
+	letter-spacing: 1px;
+}
+.cancel:hover{
+    background-color: #b40303ea;
+}

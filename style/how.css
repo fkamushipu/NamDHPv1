@@ -1,0 +1,33 @@
+.what{
+    background-color: beige;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+.what h3{
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.what-title{
+	padding: 30px;
+	max-width: 250px;
+	text-align: center;
+	background-color: rgb(163, 163, 141);
+}
+.what-info{
+	text-align: center;
+	padding: 30px;
+	width: 100%
+}
+.why{
+    text-align: center;
+    background-color: azure;
+}
+#product{
+    text-align: center;
+    background-color: rgb(228, 228, 208);
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Health Passport">	
+	<meta name="keywords" content="health, COVID-19, vaccine, vaccination, test">
+	<meta name="author" content="Feni Kamushipu">
+    <title>Nam DHP</title>
+    <link rel="stylesheet" href="../style/default.css">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="icon" href="../images/DHP Done.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNavigation">
+            <div class="logo">
+                <a href="index.html"><img src="../images/Nam-DHP3.png" alt="Logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul >
+                    <li><a class="active" href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="how.html">How it works</a></li>
+                    <li><a href="register.html">Register / Log In</a></li>
+                    <li><a href = "profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sideNavigation">
+            <ul class="nav-list">
+                <li><a class="active" href="#content">Today In</a></li>
+                <li><a href="#masks">Masks</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#distancing">Distancing</a></li>
+            </ul>
+        </div>
+
+        <div class="content" id="content">
+            <div class="today-in" id="today-in">
+                <div><img src="../images/Covid Info.jpg" alt="Covid 19 Information  "></div> 
+                <div class="news">
+                    <h3 style="text-align: center;">Today In</h3>
+                    <div><p>The Namibian president will be announcing the new precautions regarding curfew.</p></div>
+                </div>
+            </div>
+            <br><hr><br>
+            <div class="masks" id="masks">
+                <img src="../images/disposable-mask.jpg" alt="mask" >
+                <div class="slide-1 fade">
+                    <div class="information">
+                        <h3>Masks</h3>
+                        <p>Do not hang your masks around the neck as germs can easily reach your mouth and nose.</p>
+                    </div>  
+                </div>
+                <div class="slide-1 fade">
+                    <div class="information">
+                        <h3>Masks</h3>
+                        <p>Do not share masks.</p>
+                    </div>  
+                </div>
+                <div class="slide-1 fade">
+                    <div class="information">
+                        <h3>Masks</h3>
+                        <p> Replace the masks with a new one as soon as it is damp or dirty and do not re-use single use masks.</p>
+                    </div>  
+                </div>
+                <div class="slide-1 fade">
+                    <div class="information">
+                        <h3>Masks</h3>
+                        <p> Cover your mouth and nose with the mask and make sure there are no gaps  between your face and the mask.</p>
+                    </div>  
+                </div>
+            </div>
+            <br><hr><br>
+            <div class="nutrition" id="nutrition">
+                <div class="slide-2 fade">
+                    <img src="" alt="">
+                    <div class="information">
+                        <h3>Nutrition</h3>
+                        <p>Consume clean and safe water and food.</p>
+                    </div>  
+                </div>
+                <div class="slide-2 fade">
+                    <img src="" alt="">
+                    <div class="information">
+                        <h3>Nutrition</h3>
+                        <p>Wash your hand with soap and running water before eating.</p>
+                    </div>  
+                </div>
+                <div class="slide-2 fade">
+                    <img src="" alt="">
+                    <div class="information">
+                        <h3>Nutrition</h3>
+                        <p>Care and support for those who don’t have food and look after elderly and young mothers.</p>
+                    </div>  
+                </div>
+            </div>
+
+            <br><hr><br>
+
+            <div class="distancing" id="distancing">
+                <div class="distance-title">
+                    <h3>Social Distancing</h3>
+                </div>
+                <div class="distance-info">
+                    <p>Practice Social distancing when in public by :
+                    Keeping 1-meter distance or more from another person should be strictly adhered to in all public spaces.</p>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("slide-1");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+
+   var slideIndex1 = 0;
+    showSlides1();
+
+    function showSlides1() {
+    var i;
+    var slides1 = document.getElementsByClassName("slide-2");
+    for (i = 0; i < slides1.length; i++) {
+        slides1[i].style.display = "none";
+    }
+    slideIndex1++;
+    if (slideIndex1 > slides1.length) {slideIndex1 = 1}
+    slides1[slideIndex1-1].style.display = "block";
+    setTimeout(showSlides1, 5000); // Change image every 5 seconds
+    }
+</script>
+</body>
+</html>

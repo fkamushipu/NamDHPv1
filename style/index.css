@@ -1,0 +1,80 @@
+.today-in{
+	width:100%;
+	background-color: aliceblue;
+	margin-bottom:14px;
+	display: grid;
+	grid-template-columns: 40% 60%;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	padding :16px;
+	z-index : 2;
+}
+.news{
+	padding:14px;
+}
+.masks{
+    width:100%;
+	background-color: aliceblue;
+	margin-bottom:14px;
+	display: grid;
+	grid-template-columns: 30% 70%;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	padding :16px;
+}
+.masks img{
+	width:50%;
+}
+.slide-1{
+	color: white;
+    display:none;
+	width: 60%;	
+}
+.slide-1 .information{
+	opacity:0.7;
+	background-color:rgb(46, 45, 45);
+	font-size:18px;
+	position: absolute;
+	text-align: center;
+	height:20%;
+	width :50%;
+ 
+}
+
+.fade{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration: 5s;
+}
+@-webkit-keyframes fade{
+	from {opacity: .7;}
+	to {opacity: 1;}
+}
+@-webkit fade{
+	from {opacity: .7;}
+	to {opacity: 1;}
+}
+.distancing{
+	background-color:  aliceblue;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	display: flex;
+	max-width: 100%;
+	margin: 20px;
+	overflow: hidden;
+	width: 100%;
+}
+.distancing h3{
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.distance-title{
+	padding: 30px;
+	max-width: 250px;
+	text-align: center;
+	background-color: beige;
+}
+.distance-info{
+	text-align: center;
+	padding: 30px;
+	width: 100%
+}

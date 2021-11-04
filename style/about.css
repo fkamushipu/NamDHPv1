@@ -1,0 +1,15 @@
+.about{
+	width:100%;
+	background-color: aliceblue;
+	margin-bottom:14px;
+	padding:14px;
+    
+}
+.mission{
+    width : 100%;
+	background-color: antiquewhite;
+}
+.mission-content{
+    display: flex;
+    padding: 14px;
+}
