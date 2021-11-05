@@ -44,9 +44,9 @@
                             you will have access to your medical health information related to COVID-19.
                             If you are vaccinated you will have  your proof of vaccination always accessible to you when it's required or requested.
                         </p>
-                        <button class="btn" id="signup">Register</button>
+                        <button class="btn" id="signup" onclick="document.getElementById('register').style.display='block'">Register</button>
                         <div class="register" id="register">
-                            <span class="close2">&times;</span>
+                            <span onclick="document.getElementById('register').style.display='none'" class="close">&times;</span>
                             <h1>Register</h1>
                             <form method="POST" action="php/Signup.php">
                                 <label>Name</label>
@@ -68,23 +68,29 @@
                         <p>If you do not already have an existing Nam DHP account, go to Sign Up!
                             
                         </p>
-                        <button class="btn" id="signin">Log In</button>
+                        <button class="btn" id="signin" onclick="document.getElementById('login').style.display='block'">Log In</button>
                         <div class="login" id="login">
-                            <span class="close">&times;</span>
+                            <span onclick="document.getElementById('login').style.display='none'" class="close">&times;</span>
                             <h1>Log In</h1>
+
                             <form method="get" action="php/Login.php">
                                 <label for="id">
                                     <i class="fas fa-user"></i>
                                 </label>
-                                <input type="text" name="id" placeholder="id" id="id" required>
+                                <input type="text" name="id" placeholder="I d" id="id" required>
                                 <label for="password">
                                     <i class="fas fa-lock"></i>
                                 </label>
                                 <input type="password" name="password" placeholder="Password" id="password" required>
-                               
-                                <input type="checkbox" name="checkbox"> Stay signed in 
-                                 
+                                
                                 <input type="submit" value="Login">
+                                <div class="remember">
+                                    Stay signed in 
+                                    <input type="checkbox" name="checkbox"> 
+                                </div>
+                                <div class="reset">
+                                    Forgot password? <a>Click here!</a>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -92,29 +98,5 @@
             </div>
         </div>
     </div>
-    <script>
-        var modal = document.getElementById("login");
-        var btn = document.getElementById("signin");
-        var span = document.getElementsByClassName("close")[0];
-    
-        btn.onclick = function() {
-      modal.style.display = "block";
-        }
-        span.onclick = function(){
-            modal.style.display = "none";
-        }
-
-        var modal2 = document.getElementById("register");
-        var btn2 = document.getElementById("signup");
-        var span2 = document.getElementsByClassName("close2")[0];
-    
-        btn2.onclick = function() {
-      modal2.style.display = "block";
-        }
-        span2.onclick = function(){
-            modal2.style.display = "none";
-        }
-    
-    </script>
 </body>
 </html>

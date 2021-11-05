@@ -55,39 +55,25 @@
 
 /*Register form style */
 .register{
-  	width: 600px;
+  	width: 50%;
   	box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 0.3);
 	margin: 100px auto;
 	display: none;
 	position: absolute;
 	z-index: 1;
 	top: 0;
-	left: 35%;
+	left: 30%;
 	right : 50%;
   	background-color: #DCDCDC	;
 }
 .register label{
-	width:200px;
+	width:100%;
 }
 
 .row{
 	display: inline-block;
 }
 
-.close2 {
-	color: rgb(240, 3, 3);
-	float: right;
-	font-size: 28px;
-	font-weight: bold;
-	top: 0 ;
-  }
-  .close2:hover,
-.close2:focus {
-	background-color: #000000;
-  color: rgb(240, 3, 3);
-  text-decoration: none;
-  cursor: pointer;
-}
 
 /*Login Form style */
 .login {
@@ -96,12 +82,13 @@
   	box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 0.3);
 	margin: 100px auto;
 	display: none;
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 35%;
 	right : 50%;
   	background-color: #DCDCDC	;
+	overflow: auto;
       
 }
 
@@ -120,25 +107,34 @@ h1 {
   	padding-top: 20px;
 
 } 
+.login form label i{
+	margin-top: 14px;
+}
 .login form label {
-  	display: flex;
+  	display: block;
   	justify-content: center;
-  	align-items: center;
-  	width: 50px;
+  	text-align: center;
+  	width: 10%;
   	height: 50px;
   	background-color:  #860a55;
   	color: #ffffff;
 }
 .login form input[type="password"], .login form input[type="text"] {
-  	width: 310px;
-  	height: 50px;
+	display: block;
+	width: 80%;
+	height: 50px;
   	border: 1px solid #dee0e4;
-  	margin-bottom: 20px;
+  	margin-bottom: 5%;
   	padding: 0 15px;
 }
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+	background-color: #ddd;
+	outline: none;
+}
 .login form input[type="submit"] {
-	bottom: 14px;
-  	width: 80%;
+	border-radius: 14px;
+  	width: 98%;
   	padding: 15px;
  	margin-top: 20px;
   	color: #026C00;	
@@ -157,7 +153,7 @@ h1 {
 .close {
 	color: rgb(240, 3, 3);
 	float: right;
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: bold;
 	top: 0 ;
   }
@@ -167,4 +163,14 @@ h1 {
   color: rgb(240, 3, 3);
   text-decoration: none;
   cursor: pointer;
+}
+.remember{
+	display: block;
+	padding: 14px;
+	margin: 14px;
+}
+.reset{
+	float: left;
+	padding: 14px;
+	margin: 14px;
 }
