@@ -1,13 +1,19 @@
 .about{
-	width:100%;
+	width:98%;
 	background-color: aliceblue;
 	margin-bottom:14px;
 	padding:14px;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
     
 }
 .mission{
-    width : 100%;
+    width : 98%;
 	background-color: antiquewhite;
+	border-radius: 20px;
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	margin-bottom:14px;
+	padding:14px;
 }
 .mission-content{
     display: flex;
