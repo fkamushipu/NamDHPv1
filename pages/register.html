@@ -49,12 +49,43 @@
                             <span onclick="document.getElementById('register').style.display='none'" class="close">&times;</span>
                             <h1>Register</h1>
                             <form method="POST" action="php/Signup.php">
-                                <label>Name</label>
-                                <input type="text" placeholder="Name"/>
-                                <label>Last Name</label>
-                                <input type="text" placeholder="Last Name"/>
-                                <label>Age</label>
-                                <input type="text" placeholder="Age"/>
+
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Enter your name" name="name" id="name"/>
+
+                                <label for="lname">Last Name</label>
+                                <input type="text" placeholder="Enter your last name" name="lname" id="lname" />
+
+                                <label for="dof">Date Of Birth</label>
+                                <input type="date" placeholder="Enter your date of birth" name="dof" id="dof" /> <br>
+                                
+                                <label for="mstatus">Marital Status</label><br>
+
+                                <input type="radio" name="mstatus" value="Single" id="single">
+                                <label for="single">Single</label> <br>
+
+                                <input type="radio" name="mstatus" value="Married" id="married">
+                                <label for="married">Married</label> <br>
+
+                                <input type="radio" name="mstatus" value="Divorced" id="divorced">
+                                <label for="divorced">Divorced</label> <br>
+
+                                <input type="radio" name="mstatus" value="Widowed" id="widowed">
+                                <label for="widowed">Widowed</label></label> <br><br>
+
+                                <label for="name">Name</label>
+                                <input type="text" placeholder="Enter your name" name="name" id="name"/>
+
+                                <label for="gender">Gender</label><br>
+
+                                <input type="radio" name="gender" value="Female" id="female">
+                                <label for="female">Female</label> <br>
+
+                                <input type="radio" name="gender" value="Male" id="male">
+                                <label for="male">Male</label> <br>
+
+                                <input type="radio" name="gender" value="Other" id="other">
+                                <label for="other">Other</label> <br>
                                 
                                 <input type="submit" value="Register">
                             </form>

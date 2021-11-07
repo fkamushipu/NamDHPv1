@@ -55,53 +55,54 @@
                         0800100100 MOHS for other enquiries relted to COVID-19.
                     </p>
 
-                    <button class="btn" id="book-btn">Booking</button>
+                    <button class="btn" id="book-btn" onclick="document.getElementById('book-modal').style.display='block'">Booking</button>
 
                     <div class="book-modal" id="book-modal">
-                        <div class="book-content">
-                            <span class="close">&times;</span>
-                            <form method="POST" action="register.php">
-                                <h3>Register for Booking</h3>
-                                <div class="input-group">
-                                <label>ID</label>
-                                <input type="text" name="id">
-                                </div>
+                        <span onclick="document.getElementById('book-modal').style.display='none'" class="close">&times;</span>
+                        <h1>Register for Booking</h1>
+                        <form method="POST" action="register.php">
+
+                            <label for="name">Name</label>
+                            <input type="text" placeholder="Enter your name" name="name" id="name"/>
+
+                            <label for="lname">Last Name</label>
+                            <input type="text" placeholder="Enter your last name" name="lname" id="lname" />
+
+                            <label for="dof">Date Of Birth</label>
+                            <input type="date" placeholder="Enter your date of birth" name="dof" id="dof" /> <br>
                             
-                                <div class="input-group">
-                                    <label>Name</label>
-                                    <input type="text" name="name">
-                                </div>
+                            <label for="mstatus">Marital Status</label><br>
+
+                            <input type="radio" name="mstatus" value="Single" id="single">
+                            <label for="single">Single</label> <br>
+
+                            <input type="radio" name="mstatus" value="Married" id="married">
+                            <label for="married">Married</label> <br>
+
+                            <input type="radio" name="mstatus" value="Divorced" id="divorced">
+                            <label for="divorced">Divorced</label> <br>
+
+                            <input type="radio" name="mstatus" value="Widowed" id="widowed">
+                            <label for="widowed">Widowed</label></label> <br><br>
+
+                            <label for="lifestyle">Lifestyle</label>
+                            <input type="text" placeholder="Smoking or drinking e.t.c." name="lifestyle" id="lifestyle"/>
+
+                            <label for="gender">Gender</label><br>
+
+                            <input type="radio" name="gender" value="Female" id="female">
+                            <label for="female">Female</label> <br>
+
+                            <input type="radio" name="gender" value="Male" id="male">
+                            <label for="male">Male</label> <br>
+
+                            <input type="radio" name="gender" value="Other" id="other">
+                            <label for="other">Other</label> <br>
                             
-                                <div class="input-group">
-                                    <label>Surname</label>
-                                    <input type="text" name="surname">
-                                </div>
+                            <input type="submit" value="Send" class="submit">
+                            <input value="Cancel" class="cancel">
                             
-                                <div class="input-group">
-                                    <label>Date Of Birth</label>
-                                    <input type="text" name="dateofbirth">
-                                </div>
-                            
-                                <div class="input-group">
-                                    <label>Gender</label>
-                                    <select name="gender">
-                                        <option value="female">Female</option>
-                                        <option value="male">Male</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                </div>
-                            
-                                <div class="input-group">
-                                    <label>Lifestyle</label>
-                                    <input type="text" name="lifestyle" placeholder="smoking or drinking e.t.c.">
-                                </div>
-                            
-                                <div class="input-group">
-                                    <button type="submit" name="register" class="submit">Send</button>
-                                    <button class="cancel"><a href="booking.html">Cancel</a></button>
-                                </div>
-                            </form>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -124,18 +125,6 @@
             </div>
         </div>
     </div>
-<script>
-    var modal = document.getElementById("book-modal");
-    var btn = document.getElementById("book-btn");
-    var span = document.getElementsByClassName("close")[0];
 
-    btn.onclick = function() {
-  modal.style.display = "block";
-    }
-    span.onclick = function(){
-        modal.style.display = "none";
-    }
-
-</script>
 </body>
 </html>

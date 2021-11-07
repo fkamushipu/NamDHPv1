@@ -16,7 +16,6 @@
 
 }
 .booking-info{
-    text-align: center;
 	padding: 30px;
 	width: 100%
 }
@@ -42,29 +41,46 @@
 .btn:hover{
     background-color: #023f01;
 }
-
 .book-modal{
-	left: 50px;
-	top: 50px;
+	padding-left:14px;
+  	width: 50%;
+  	box-shadow: 9px 9px 9px 0 rgba(0, 0, 0, 0.3);
+	margin: 100px auto;
 	display: none;
-	z-index: 1;
-	overflow: auto;
-	background-color: #C4C4C4;
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 400px;
-	height: 350px;
-	padding: 80px 40px;
+	z-index: 1;
+	top: 0;
+	left: 30%;
+	right : 50%;
+  	background-color: #DCDCDC	;
 }
-.book-content{
-	width :75%;
+.book-modal label{
+	width:25%;
+	display: inline-block;
+} 
+.book-modal input[type="text"], .book-modal form input[type="date"]{
+	
+	height: 30px;
+  	border: 1px solid #dee0e4;
+  	margin-bottom: 3%;
+  	padding: 0 15px;
+	width :60%;
+}
+
+input [type="radio"] {
+	float :right;
+	left :0;
+	
+}
+/* Add a background color when the all the inputs in any form in register file get focus */
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
+	background-color: #f1c3df;
+	outline: none;
 }
 .close {
 	color: rgb(240, 3, 3);
 	float: right;
-	font-size: 28px;
+	font-size: 40px;
 	font-weight: bold;
 	top: 0 ;
   }
@@ -75,43 +91,10 @@
   text-decoration: none;
   cursor: pointer;
 }
-.book-content h3{
-	margin: 0;
-	padding: 0 0 20px;
-	color: rgb(0, 0, 0);
+h1 {
 	text-align: center;
-	text-transform: uppercase;
-}
-form label {
-	margin: 0;
-	padding: 0;
-	font-weight: bold;
-	color: rgb(0, 0, 0);
-}
-form input {
-	width: 100%;
-	margin-bottom: 20px;
-}
-.submit{
-	background-color: #026C00;
-	border: 0;
-	border-radius: 50px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	font-size: 16px;
-	padding: 12px 25px;
-	bottom: 30px;
-	letter-spacing: 1px;
-}
-.cancel{
-	background-color: #FC1B1B;
-	border: 0;
-	border-radius: 50px;
-	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	font-size: 16px;
-	padding: 12px 25px;
-	bottom: 30px;
-	letter-spacing: 1px;
-}
-.cancel:hover{
-    background-color: #b40303ea;
+	color: #660740;
+	font-size: 24px;
+	padding: 20px 0 20px 0;
+	border-bottom: 1px solid #dee0e4;
 }
