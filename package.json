@@ -1,0 +1,26 @@
+{
+  "name": "NamDHP",
+  "version": "1.0.0",
+  "description": "Namibia Digital Health Passport for Covid-19 Vaccine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkulupe/NamDHP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkulupe/NamDHP/issues"
+  },
+  "homepage": "https://github.com/mkulupe/NamDHP#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react-app": "^3.1.2",
+    "es-module-shims": "^1.3.1",
+    "react-animated-slider": "^2.0.0"
+  }
+}

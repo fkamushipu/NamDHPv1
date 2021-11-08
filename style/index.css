@@ -1,17 +1,4 @@
-.today-in{
-	width:100%;
-	background-color: aliceblue;
-	margin-bottom:14px;
-	display: grid;
-	grid-template-columns: 40% 60%;
-	border-radius: 20px;
-	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
-	padding :16px;
-	z-index : 2;
-}
-.news{
-	padding:14px;
-}
+
 .masks{
     width:100%;
 	background-color: aliceblue;
@@ -77,4 +64,37 @@
 	text-align: center;
 	padding: 30px;
 	width: 100%
+}
+.ma-1{
+	margin: 4px;
+}
+.ma-2{
+	margin: 8px;
+}
+.ma-3{
+	margin: 16px;
+}
+.ma-2-5{
+	margin: 14px;
+}
+/* padding auto */
+.pa-1{
+	padding: 4px;
+}
+.pa-2{
+	padding: 8px;
+}
+.pa-3{
+	padding: 16px;
+}
+.primary-shadow{
+	box-shadow: 1px 0px 21px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px 0px 21px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px 0px 21px 0px rgba(0,0,0,0.75);
+}
+.rounded-sm{
+	border-radius: 5px;
+}
+.rounded-md{
+	border-radius: 5px;
 }

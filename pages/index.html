@@ -42,11 +42,8 @@
 
         <div class="content" id="content">
             <div class="today-in" id="today-in">
-                <div><img src="../images/Covid Info.jpg" alt="Covid 19 Information  "></div> 
-                <div class="news">
-                    <h3 style="text-align: center;">Today In</h3>
-                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr"><a class="twitter-timeline" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> 
-                    </p></blockquote>
+                <div id="covid_news_container" class="news">
+
                 </div>
             </div>
             <br><hr><br>
@@ -117,7 +114,6 @@
 
         </div>
     </div>
-<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
 <script>
     var slideIndex = 0;
     showSlides();
@@ -149,5 +145,12 @@
     setTimeout(showSlides1, 5000); // Change image every 5 seconds
     }
 </script>
+<!-- Load React. -->
+  <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="app.js"></script>
 </body>
 </html>
