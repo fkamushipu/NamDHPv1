@@ -88,9 +88,9 @@
 	padding: 16px;
 }
 .primary-shadow{
-	box-shadow: 1px 0px 21px 0px rgba(0,0,0,0.75);
--webkit-box-shadow: 1px 0px 21px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 0px 21px 0px rgba(0,0,0,0.75);
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+-webkit-box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+-moz-box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
 }
 .rounded-sm{
 	border-radius: 5px;
