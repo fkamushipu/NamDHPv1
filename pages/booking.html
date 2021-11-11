@@ -8,6 +8,8 @@
 	<meta name="keywords" content="health, COVID-19, vaccine, vaccination, test">
 	<meta name="author" content="Feni Kamushipu">
     <title>Nam DHP</title>
+
+    <!-- Default css that applies to all pages -->
     <link rel="stylesheet" href="../style/default.css">
     <link rel="stylesheet" href="../style/booking.css">
     <link rel="icon" href="../images/DHP Done.png" type="image/x-icon">
@@ -19,6 +21,7 @@
             <div class="logo">
                 <a href="index.html"><img src="../images/Nam-DHP3.png" alt="Logo"></a>
             </div>
+            <!-- Top navigation list -->
             <div class="nav-list">
                 <ul >
                     <li><a  href="index.html" >Home</a></li>
@@ -30,7 +33,7 @@
                 </ul>
             </div>
         </div>
-
+        <!--Side navigation for the booking page -->
         <div class="sideNavigation">
             <ul class="nav-list">
                 <li><a class="active" href="#booking">Booking</a></li>
@@ -56,7 +59,8 @@
                     </p>
 
                     <button class="btn" id="book-btn" onclick="document.getElementById('book-modal').style.display='block'">Booking</button>
-
+                    
+                    <!--Hidden Booking form that shows after the booking button is clicked-->
                     <div class="book-modal" id="book-modal">
                         <span onclick="document.getElementById('book-modal').style.display='none'" class="close">&times;</span>
                         <h1>Register for Booking</h1>

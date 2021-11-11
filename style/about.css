@@ -1,10 +1,11 @@
 .about{
+	
 	width:98%;
 	background-color: aliceblue;
 	margin-bottom:14px;
 	padding:14px;
 	border-radius: 20px;
-	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2);
+	box-shadow: 0 10px 10px rgba(36, 36, 36, 0.2); /* Box gray fade shodow on box sides except top */
     
 }
 .mission{
