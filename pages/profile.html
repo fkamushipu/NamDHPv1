@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Health Passport">	
+	<meta name="keywords" content="health, COVID-19, vaccine, vaccination, test">
+	<meta name="author" content="Feni Kamushipu">
+    <title>Nam DHP</title>
+    <link rel="stylesheet" href="../style/default.css">
+    <link rel="stylesheet" href="../style/profile.css">
+    <link rel="icon" href="../images/DHP Done.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="topNavigation">
+            <div class="logo">
+                <a href="index.html"><img src="../images/Nam-DHP3.png" alt="Logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul >
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="booking.html">Bookings</a></li>
+                    <li><a href="how.html">How it works</a></li>
+                    <li><a href="register.html">Register / Log In</a></li>
+                    <li><a class="active" href = "profile.html">Profile</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sideNavigation">
+            <img src="../images/profile avatar.jpg"/>
+            <div class="update"><button class="updatebtn">Update Profile</button></div><br>
+
+            <ul class="nav-list">
+                <li><a href="#submit">Forms Submitted</a></li>
+                <li><a href="#card">Vaccination Card</a></li>
+            </ul>
+            <div  id="logout"><button>Log Out</button></div>
+        </div>
+
+        <div class="content" id="content">
+            <div class="details" id="details">
+                <div>
+                    <p>Name :</p>
+                    <p>Last Name :</p>
+                    <p>Date Of Birth :</p>
+                </div>
+            </div>
+            <br><hr><br>
+
+            <div class="submit" id="submit">  
+                <p>You have not submitted any forms at the moment.</p>
+
+            </div>
+            <br><hr><br>
+            <div class="card" id="card">
+                <h3>Vaccination Card</h3>
+                <button>Generate QR Code</button>
+                <div class="qr-modal">
+
+                    <button type="submit" onclick="window.open('file.png')">Save Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

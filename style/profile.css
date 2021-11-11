@@ -1,0 +1,22 @@
+#logout{
+    bottom: 10px;
+    position: fixed;
+    width:10%;
+    height:5%;
+
+}
+#logout button{
+    
+    border-radius: 50px;
+    background-color:#C4C4C4;
+    width: 100%;
+    box-shadow: 0 5px 5px rgba(36, 36, 36, 0.2);
+}
+.updatebtn{
+    color:#026C00;
+    background-color: #C4C4C4;
+    border-radius:50px;
+} 
+.update{
+    text-align: center;
+}
